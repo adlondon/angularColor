@@ -4,6 +4,10 @@ angular
     $routeProvider
       .when('/', {
         templateUrl: "templates/home.html",
-        // controller: 'HomeController'
+        controller: 'HomeController'
+      })
+      .when('/scheme', {
+        templateUrl: "templates/scheme.html",
+        controller: 'SchemeController'
       })
   })
