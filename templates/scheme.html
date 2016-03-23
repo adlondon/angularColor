@@ -1,11 +1,16 @@
+<div class="nav row">
+  <div class="to-link small-12 medium-12 large-6 columns">
+    <a href="/#/">go to random color</a>
+  </div>
+  <div class="new-scheme small-12 medium-12 large-6 columns">
+    <a ng-click="reloadRoute()"><i class="fa fa-refresh"></i> Refresh</a>
+  </div>
+</div>
 <div class="scheme-view row">
   <div class="small-12 large-12 columns">
-    <div class="view-link">
-      <a href="/#/">random color</a>
-    </div>
     <h3>{{schemeName}}</h3>
-    <article class="scheme-color" ng-repeat="hex in schemeHex" style="background-color:#{{hex}}">
-      <h1>#{{hex}}</h1>
+    <article class="scheme-color" ng-repeat="hex in schemeHex">
+      <h1 style="color:#{{hex}}">#{{hex}}</h1>
     </article>
   </div>
 </div>
