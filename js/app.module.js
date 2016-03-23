@@ -2,7 +2,7 @@ angular
   .module('angularColor',['ngRoute'])
   .config(function($routeProvider) {
     $routeProvider
-      .when('/', {
+      .when('/home', {
         templateUrl: "templates/home.html",
         controller: 'HomeController'
       })
