@@ -3,7 +3,7 @@ angular
   .controller('HomeController', function($scope, ColorService, $route){
     ColorService.getColor().then(function(data){
       console.log("data", data);
-      $scope.name = data.data.colors[0].tags[0].name;
+      $scope.name = data.data.colors[0].tagfs[0].name;
       $scope.hex = data.data.colors[0].hex;
       $scope.reloadRoute = function() {
        $route.reload();
